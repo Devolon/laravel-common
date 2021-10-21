@@ -1,0 +1,29 @@
+{
+    "name": "devolon/laravel-common",
+    "description": "Devolon Payment provides utils in order to make development easier",
+    "keywords": ["laravel", "utils"],
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "laravel/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Devolon\\Common\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Devolon technical team",
+            "homepage": "https://www.devolon.fi"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Devolon\\Common\\CommonServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
