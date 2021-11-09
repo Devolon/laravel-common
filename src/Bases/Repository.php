@@ -63,7 +63,7 @@ abstract class Repository implements EloquentRepositoryInterface
      *
      * @return mixed
      */
-    abstract protected function model();
+    abstract public function model();
 
     public function all($columns = ['*'])
     {
