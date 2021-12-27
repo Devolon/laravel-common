@@ -18,10 +18,6 @@
  *      url="http://localhost:80",
  *      description="Local API Server"
  * )
- * @OA\Server(
- *      url="https://chn5ti3bc6.execute-api.eu-central-1.amazonaws.com",
- *      description="Stage API Server"
- * )
  *
  * @OA\SecurityScheme(
  *     securityScheme="bearerAuth",
