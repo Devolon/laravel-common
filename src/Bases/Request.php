@@ -50,16 +50,7 @@ class Request extends FormRequest
             $data[$param_key] = $param_value;
         }
 
-        $newData = [];
-
-        foreach ($data as $key => $value) {
-            if (TypeHelpers::isIntValue($value)) {
-                $value = (int) $value;
-            }
-
-            $newData[$key] = $value;
-        }
-        return $newData;
+        return $data;
     }
 
     public static function appendPrefixToArrayKeys(array $array, $prefix): array
