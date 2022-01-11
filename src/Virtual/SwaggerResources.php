@@ -14,7 +14,7 @@
 /**
  * @OA\Response (
  *     response="NoContentResponse",
- *     description="Forbidden, this actions is unauthorized.",
+ *     description="Success, no need to navigate away.",
  *     @OA\JsonContent(
  *         required={"message"},
  *         @OA\Property(property="message", type="string", description="exception description"),
