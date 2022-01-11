@@ -43,3 +43,14 @@
  *     )
  * )
  */
+
+ /**
+ * @OA\Response (
+ *     response="CreatedResponse",
+ *     description="Success, resource created.",
+ *     @OA\JsonContent(
+ *         required={"message"},
+ *         @OA\Property(property="message", type="string", description="exception description"),
+ *     )
+ * )
+ */
