@@ -6,7 +6,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * Class ForbiddenResponse
+ * Class NoContentResource
  *
  * @package Devolon\Common\Virtuals
  */
