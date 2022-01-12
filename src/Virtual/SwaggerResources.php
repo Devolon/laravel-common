@@ -14,7 +14,7 @@
 /**
  * @OA\Response (
  *     response="NoContentResponse",
- *     description="Forbidden, this actions is unauthorized.",
+ *     description="Success, no need to navigate away.",
  *     @OA\JsonContent(
  *         required={"message"},
  *         @OA\Property(property="message", type="string", description="exception description"),
@@ -37,6 +37,17 @@
  * @OA\Response (
  *     response="UnauthorizedResponse",
  *     description="Unauthorized, the user is unauthenticated.",
+ *     @OA\JsonContent(
+ *         required={"message"},
+ *         @OA\Property(property="message", type="string", description="exception description"),
+ *     )
+ * )
+ */
+
+ /**
+ * @OA\Response (
+ *     response="CreatedResponse",
+ *     description="Success, resource created.",
  *     @OA\JsonContent(
  *         required={"message"},
  *         @OA\Property(property="message", type="string", description="exception description"),

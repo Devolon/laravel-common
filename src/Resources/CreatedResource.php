@@ -6,11 +6,11 @@ use Illuminate\Http\Resources\Json\JsonResource;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
- * Class NoContentResource
+ * Class CreatedResource
  *
  * @package Devolon\Common\Virtuals
  */
-class NoContentResource extends JsonResource
+class CreatedResource extends JsonResource
 {
     public function __construct()
     {
@@ -19,7 +19,7 @@ class NoContentResource extends JsonResource
 
     public function withResponse($request, $response)
     {
-        $response->setStatusCode(Response::HTTP_NO_CONTENT);
+        $response->setStatusCode(Response::HTTP_CREATED);
 
         parent::withResponse($request, $response);
     }
